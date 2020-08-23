@@ -1,0 +1,197 @@
+/* ----STYLESHEET FOR Jacque's Portfolio ----*/
+
+/* ---- BASE STYLES ---- */
+body {
+   background-color: #1f202b;
+   color: #ffffff;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 24px;
+  }
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+*  
+ /* ---- GRID STYLES ---- */
+.half-width {
+   float: left;
+   height: 500px;
+   margin: 40px 60px 80px 40px;
+   padding: 30px;
+   width: 40%;
+ }
+.third-width {
+   float: left;
+   height: 350px;
+   margin: 85px 20px 10px 50px;
+   padding: 10px;
+   text-align: center;
+   width: 26%;
+}
+
+/*===== HEADER =====*/
+header {
+   height: 75px;
+   width: 100%;
+  }
+ header h1 {
+    float: left;
+   font-size: 30px;
+   color: #ffffff;
+   padding: 10px;
+   margin: 10px;
+   width: 580px;
+  }
+nav {
+   float: right;
+   padding: 10px;
+   margin: 2px;
+   width: 675px;
+  }
+ nav ul {  
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   text-align: right;
+  }
+ nav ul li{
+   display: inline;
+   padding: 5px;
+   }
+ nav ul li a {
+   color: #ffffff ;
+   font-size: 30px;
+   margin-right: 40px;
+   padding-left: 10px;
+   text-decoration: none;
+  }
+ 
+ /*===== MAIN =====*/
+ .hero-image {
+   height: 750px;
+   background: url('../img/hero-image.png');
+   background-size: cover;
+   background-position: right;
+   padding-bottom: 300px;
+   padding-right: 200px;
+  }
+ main h2 {
+   clear: both;
+   color: #ffffff;
+   float: left;
+   font-family: 'Source Code Pro', monospace;
+   font-size: 70px;
+   margin: 280px 10px 75px 20px;
+   padding: 20px;
+   text-align: left;
+  }
+ main h2 span {
+   color: #fa0075;
+  }
+  h3 {
+   color: #fa0075;
+   clear: both;
+   font-size: 36px;
+   font-family: 'Source Code Pro', monospace;
+   letter-spacing: 0.1em;
+   height: 50px;
+   margin: 30px auto;
+   padding: 20px 0;
+   text-align: center; 
+   width: 100%;
+ }
+h4 {  
+   clear: both;
+   display: inline-block;
+   font-weight: 700;
+ }
+h5 {
+   font-weight: 500;
+}
+
+h6 {
+   clear: both;
+   font-size: 18px;
+   height: 50px;
+   padding: 10px;
+   text-align: center;
+   width: 100%;
+   }
+ 
+ /*===== WORK =====*/
+ #work .half-width {
+    height: 500px;
+}
+#work img {
+   border: 1px;
+   border-color: #b7b7b7;
+   float: left;
+   height: 500px;
+   width: 600px;
+}
+#work p {
+   margin-top: 20px;
+}
+#work .align {
+   text-align: right;
+}
+
+/*===== ABOUT =====*/
+#about .full-width {
+   text-align: center;
+   height: 100px;
+   margin-left: 320px;
+   padding-top: 10px;
+}
+#about {
+   background-image: url('../img/about-me.png');
+   background-size: cover;
+   background-position: right;
+   box-sizing: content-box;
+   clear: both;
+   height: 575px;
+   
+}
+#about p {
+   color: #1f202b;
+   float: left;
+   height: 100px;
+   text-align: left;
+   margin: 2px 10px 10px 40px;
+   padding: 10px;
+   width: 700px;
+}
+#about img {
+   border: 10px outset silver;
+   height: 225px;
+   margin: 10px 10px 10px 297px;
+   padding: 10px;
+   width: 225px;
+}
+
+/*===== FOOTER/CONTACT =====*/
+#contact .full-width {
+    clear: both;
+   text-align: center;
+   height: 100px;
+   margin: 100px 0 0 300px;
+   margin-top: 200px;
+   padding: 10px;
+}
+#contact ul {
+   list-style: none;
+}
+#contact ul li {
+   display: inline-block;
+}
+#contact ul img {
+   padding: 20px 0 0 40px ;
+}
+#contact a {
+   color: #ffffff;
+}
+
+
+
