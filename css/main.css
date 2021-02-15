@@ -35,7 +35,7 @@ body {
 header .wrapper {
    display: flex;
    flex-flow: row nowrap;
-   justify-content: center;
+   justify-content: space-between;
    height: 75px;
    width: 100%;
   }
@@ -126,19 +126,43 @@ h6 {
  /*===== WORK =====*/
  #work .half-width {
    height: 500px;
+   margin: 0;
+   padding: 0;
 }
 #work img {
   border: 1px;
   border-color: #b7b7b7;
   float: left;
   height: 500px;
-  width: 600px;
+  width: 500px;
 }
-.portfolio {
+
+#work p {
+   height: 500px;
+   width: 500px;
+}
+
+#work .portfolio {
    display: flex;
    flex-flow: row wrap;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.portfolio {
+   display: flex;
    justify-content: space-between;
-   width: 100%;
+   align-items: center;
+   margin-left: 50px;
+}
+
+.half-width .para1, .para3 {
+   margin-left: 30px;
+}
+
+#work .portfolio .half-width {
+   margin-bottom: 50px;
 }
 
 #work h3 {
