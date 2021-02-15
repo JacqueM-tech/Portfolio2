@@ -145,9 +145,10 @@ h6 {
    margin-top: 30px;
 }
 
-#work p {
-  margin-top: 20px;
+.para2 {
+   text-align: left;
 }
+
 #work .align {
   text-align: right;
 }
@@ -181,7 +182,7 @@ h6 {
    float: right;
    border: 10px outset silver;
    height: 225px;
-   margin: 0 100px 0 0;
+   margin: 0 120px 0 0;
    padding: 10px;
    width: 225px;
 }
