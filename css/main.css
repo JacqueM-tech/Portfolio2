@@ -32,12 +32,15 @@ body {
 }
 
 /*===== HEADER =====*/
-header {
+header .wrapper {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: center;
    height: 75px;
    width: 100%;
   }
  header h1 {
-    float: left;
+   float: left;
    font-size: 30px;
    color: #ffffff;
    padding: 10px;
@@ -122,20 +125,31 @@ h6 {
  
  /*===== WORK =====*/
  #work .half-width {
-    height: 500px;
+   height: 500px;
 }
 #work img {
-   border: 1px;
-   border-color: #b7b7b7;
-   float: left;
-   height: 500px;
-   width: 600px;
+  border: 1px;
+  border-color: #b7b7b7;
+  float: left;
+  height: 500px;
+  width: 600px;
 }
+.portfolio {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   width: 100%;
+}
+
+#work h3 {
+   margin-top: 30px;
+}
+
 #work p {
-   margin-top: 20px;
+  margin-top: 20px;
 }
 #work .align {
-   text-align: right;
+  text-align: right;
 }
 
 /*===== ABOUT =====*/
@@ -164,9 +178,10 @@ h6 {
    width: 700px;
 }
 #about img {
+   float: right;
    border: 10px outset silver;
    height: 225px;
-   margin: 10px 10px 10px 297px;
+   margin: 0 100px 0 0;
    padding: 10px;
    width: 225px;
 }
