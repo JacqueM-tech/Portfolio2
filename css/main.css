@@ -17,7 +17,7 @@ body {
  /* ---- GRID STYLES ---- */
 .half-width {
    float: left;
-   height: 600px;
+   height: 300px;
    margin: 40px 60px 80px 40px;
    padding: 30px;
    width: 40%;
@@ -211,8 +211,12 @@ h6 {
    background-position: right;
    box-sizing: content-box;
    clear: both;
-   height: 575px;
+   height: 825px;
    
+}
+#about h3 {
+   margin-top: 120px;
+   margin-bottom: 100px;
 }
 #about p {
    color: #1f202b;
