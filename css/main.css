@@ -95,7 +95,7 @@ nav {
   h3 {
    color: #fa0075;
    clear: both;
-   font-size: 36px;
+   font-size: 40px;
    font-family: 'Source Code Pro', monospace;
    letter-spacing: 0.1em;
    height: 50px;
@@ -205,7 +205,7 @@ h6 {
 #about .full-width {
    text-align: center;
    height: 100px;
-   margin-left: 200px;
+   margin-left: 100px;
    padding-top: 10px;
 }
 #about {
@@ -219,16 +219,17 @@ h6 {
 }
 #about h3 {
    margin-top: 20px;
-   margin-bottom: 110px;
+   margin-bottom: 100px;
 }
 #about p {
    color: #1f202b;
+   font-size: 28px;
    float: left;
    height: 100px;
    text-align: left;
-   margin: 2px 10px 10px 40px;
+   margin: 0 10px 10px 300px;
    padding: 10px;
-   width: 575px;
+   width: 630px;
 }
 #about img {
    float: right;
