@@ -227,8 +227,8 @@ h6 {
    
 }
 #about h3 {
-   margin-top: 20px;
-   margin-bottom: 100px;
+   padding-top: 50px;
+   margin-bottom: 140px;
 }
 #about p {
    color: #1f202b;
@@ -259,6 +259,7 @@ h6 {
    padding: 10px;
 }
 #contact h3 {
+   padding-top: 50px;
    margin-bottom: 100px;
 }
 #contact ul {
