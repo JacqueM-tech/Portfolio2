@@ -154,6 +154,9 @@ h6 {
 .half-width .para1, .para3 {
    margin-left: 30px;
 }
+.para1 span {
+   font-size: 16px;
+}
 #projects .portfolio .half-width {
    margin-bottom: 100px;
 }
@@ -166,6 +169,12 @@ h6 {
 }
 #projects .align {
   text-align: right;
+}
+.para4 {
+   text-align: left;
+}
+.para4 span {
+   font-size: 16px;
 }
 
 /*===== SERVICES PAGE=====*/
