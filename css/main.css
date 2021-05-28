@@ -29,24 +29,6 @@ body {
    border: 2px solid var(--pink);
  }
 
-
- 
- /* ---- GRID STYLES ---- */
-.half-width {
-   float: left;
-   height: 300px;
-   margin: 40px 60px 80px 40px;
-   padding: 30px;
-   width: 40%;
- }
-.third-width {
-   float: left;
-   height: 400px;
-   margin: 85px 20px 10px 50px;
-   padding: 10px;
-   text-align: center;
-   width: 26%;
-}
 /*===== MOBILE STYLES =====*/
 /*===== HEADER =====*/
 header .wrapper {
@@ -140,12 +122,21 @@ h6 {
    }
  
  /*===== PORTFOLIO PAGE=====*/
- #projects .half-width {
-   height: 570px;
-   margin: 0;
-   padding: 0;
+ #portfolio h3 {
+   margin: 50px 0 100px;
 }
-#projects img {
+ .work {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+} 
+.work .projects {
+   text-align: center;
+   background: var(--pink);
+   padding: 10px;
+}
+
+/*#projects img {
   border: 1px;
   border-color: #b7b7b7;
   float: left;
@@ -178,10 +169,7 @@ h6 {
 #projects .portfolio .half-width {
    margin-bottom: 40px;
 }
-#projects h3 {
-   margin-top: 50px;
-   margin-bottom: 120px;
-}
+
 .para2 {
    text-align: left;
 }
@@ -197,7 +185,7 @@ h6 {
 }
 .para1, .para2, .para3 {
    margin-top: 10%;
-}
+}*/
 
 /*===== SERVICES PAGE=====*/
 #services .container {
@@ -207,29 +195,27 @@ h6 {
    align-items: center;
 }
 #services h3 {
-   margin-top: 100px;
+   margin: 100px 0;
    font-size: 50px;
 }
 .services {
-   display: flex;
-   justify-content: center;
-   margin-top: 150px;
-   margin-bottom: 120px;
-   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 30px;
 }
 .services .items {
-   display: flex;
-   flex-flow: column wrap;
-   justify-content: space-between;
-   margin-left: 40px;
+   text-align: center;
+   background: var(--pink);
+   padding: 10px;
 }
+
 .services .items h4 {
    font-size: 30px;
    margin-bottom: 20px;
 }
 .services .items img {
-   height: 300px;
-   width: 250px;
+   max-width: 300px;
+   height: 335px;
 }
 
 /*===== ABOUT =====*/
@@ -272,27 +258,25 @@ h6 {
 }
 
 /*===== FOOTER/CONTACT =====*/
-#contact .full-width {
-   clear: both;
-   text-align: center;
-   height: 200px;
-   margin: 100px 0 0 300px;
-   margin-top: 200px;
-   padding: 10px;
-}
+
 #contact h3 {
    padding-top: 50px;
    margin-bottom: 100px;
 }
-#contact ul {
-   list-style: none;
+.connect {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 40px;
+
 }
-#contact ul li {
-   display: inline-block;
+.connect .connecting {
+   text-align: center;
+   background: var(--pink);
+   padding: 10px;
 }
-#contact ul img {
+/*#contact ul img {
    padding: 30px 0 0 50px ;
-}
+}*/
 #contact a {
    color: #ffffff;
 }
