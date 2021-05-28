@@ -1,19 +1,36 @@
 /* ----STYLESHEET FOR Jacque's Portfolio ----*/
 
 /* ---- BASE STYLES ---- */
-body {
-   background-color: #1f202b;
-   color: #ffffff;
-   font-family: 'Montserrat', sans-serif;
-   font-size: 24px;
-  }
-
+/* VARIABLES */
+:root {
+   --black: #1f202b;
+   --white: #ffffff;
+   --pink: #fa0075;
+}
+/* RESET */
 * {
    box-sizing: border-box;
    margin: 0;
    padding: 0;
+   text-decoration: none;
 }
-*  
+li {
+   list-style-type: none;
+}
+body {
+   background-color: var(--black);
+   color: var(--white);
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.5rem;
+  }
+  input, textarea {
+   padding: 10px 16px;
+   border-radius: 20px;
+   border: 2px solid var(--pink);
+ }
+
+
+ 
  /* ---- GRID STYLES ---- */
 .half-width {
    float: left;
@@ -30,7 +47,7 @@ body {
    text-align: center;
    width: 26%;
 }
-
+/*===== MOBILE STYLES =====*/
 /*===== HEADER =====*/
 header .wrapper {
    display: flex;
@@ -41,11 +58,11 @@ header .wrapper {
   }
  header h1 {
    float: left;
-   font-size: 30px;
+   font-size: 32px;
    color: #ffffff;
    padding: 10px;
    margin: 10px;
-   width: 570px;
+   width: 600px;
   }
 nav {
    float: right;
@@ -84,7 +101,7 @@ nav {
    color: #ffffff;
    float: left;
    font-family: 'Source Code Pro', monospace;
-   font-size: 70px;
+   font-size: 100px;
    margin: 280px 10px 75px 20px;
    padding: 20px;
    text-align: left;
@@ -95,7 +112,7 @@ nav {
   h3 {
    color: #fa0075;
    clear: both;
-   font-size: 40px;
+   font-size: 50px;
    font-family: 'Source Code Pro', monospace;
    letter-spacing: 0.1em;
    height: 50px;
@@ -124,7 +141,7 @@ h6 {
  
  /*===== PORTFOLIO PAGE=====*/
  #projects .half-width {
-   height: 500px;
+   height: 570px;
    margin: 0;
    padding: 0;
 }
@@ -132,12 +149,13 @@ h6 {
   border: 1px;
   border-color: #b7b7b7;
   float: left;
-  height: 500px;
+  height: 450px;
   width: 500px;
 }
 #projects p {
-   height: 500px;
+   height: 450px;
    width: 500px;
+
 }
 #projects .portfolio {
    display: flex;
@@ -158,11 +176,11 @@ h6 {
    font-size: 16px;
 }
 #projects .portfolio .half-width {
-   margin-bottom: 100px;
+   margin-bottom: 40px;
 }
 #projects h3 {
-   margin-top: 40px;
-   margin-bottom: 100px;
+   margin-top: 50px;
+   margin-bottom: 120px;
 }
 .para2 {
    text-align: left;
@@ -175,6 +193,10 @@ h6 {
 }
 .para4 span {
    font-size: 16px;
+   
+}
+.para1, .para2, .para3 {
+   margin-top: 10%;
 }
 
 /*===== SERVICES PAGE=====*/
@@ -274,6 +296,20 @@ h6 {
 #contact a {
    color: #ffffff;
 }
+/*===== SMALL TABLET STYLES =====*/
+@media screen and (min-width: 620px){
+   
+}
 
 
+/*===== LARGE TABLETS & LAPTOP STYLES =====*/
+@media screen and (min-width: 960px){
+   
+}
+
+
+/*===== DESKTOP STYLES =====*/
+@media screen and (min-width: 1200px){
+   
+}
 
