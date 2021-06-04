@@ -22,6 +22,7 @@ body {
    color: var(--white);
    font-family: 'Montserrat', sans-serif;
    font-size: 1.5rem;
+   width: 100%;
   }
   input, textarea {
    padding: 10px 16px;
@@ -33,77 +34,90 @@ body {
 /*===== HEADER =====*/
 header .wrapper {
    display: flex;
-   flex-flow: row nowrap;
-   justify-content: space-between;
-   height: 75px;
-   width: 100%;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+   height: 250px;
   }
  header h1 {
-   float: left;
    font-size: 32px;
    color: #ffffff;
-   padding: 10px;
-   margin: 10px;
-   width: 600px;
+   margin: 40px 0 50px 0;
   }
-nav {
-   float: right;
-   padding: 5px;
-   margin: 2px;
-   width: 750px;
+nav ul { 
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between; 
   }
- nav ul {  
-   list-style: none;
-   margin: 0;
-   padding: 0;
-   text-align: right;
-  }
- nav ul li{
-   display: inline;
-   padding: 2px;
-   }
  nav ul li a {
    color: #ffffff ;
    font-size: 28px;
-   margin-right: 25px;
-   padding-left: 5px;
-   text-decoration: none;
+   margin-right: 50px;
+  } 
+  h3 {
+   color: #fa0075;
+   font-size: 35px;
+   font-weight: 900;
+   font-family: 'Source Code Pro', monospace;
   }
  
- /*===== MAIN =====*/
+ /* ===== MAIN ===== */
  .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
    height: 850px;
    background: url('../img/hero-image.png');
    background-size: cover;
    background-position: right;
    padding-right: 200px;
   }
- main h2 {
-   clear: both;
+ .hero-image h2 {
    color: #ffffff;
-   float: left;
    font-family: 'Source Code Pro', monospace;
-   font-size: 100px;
-   margin: 280px 10px 75px 20px;
-   padding: 20px;
+   font-size: 50px;
+   margin-top: -100px;
+   padding-right: 230px;
    text-align: left;
   }
- main h2 span {
+ .hero-image h2 span {
    color: #fa0075;
   }
-  h3 {
-   color: #fa0075;
-   clear: both;
-   font-size: 50px;
-   font-family: 'Source Code Pro', monospace;
-   letter-spacing: 0.1em;
-   height: 50px;
-   margin: 30px auto;
-   padding: 20px 0;
-   text-align: center; 
-   width: 100%;
+  /* ===== ABOUT===== */
+  #about {
+   background-image: url('../img/about-me.png');
+   background-size: cover;
+   background-position: right;
+   height: 1050px;
+  }
+  .about-me {
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+  }
+  .about-me h3 {
+   margin: 30px 0;
  }
-h4 {  
+.about-me img {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: flex-start;
+   align-items: flex-start;
+   border: 10px outset silver;
+   height: 300px;
+   padding: 10px;
+   width: 300px;
+   margin-bottom: 15px;
+} 
+.about-me p {
+   color: #1f202b;
+   font-size: 30px;
+   font-weight: 900;
+   padding: 10px;
+ }
+
+/* h4 {  
    clear: both;
    display: inline-block;
    font-weight: 700;
@@ -119,7 +133,7 @@ h6 {
    padding: 10px;
    text-align: center;
    width: 100%;
-   }
+   } */
  
  /*===== PORTFOLIO PAGE=====*/
  #portfolio h3 {
@@ -136,56 +150,6 @@ h6 {
    padding: 10px;
 }
 
-/*#projects img {
-  border: 1px;
-  border-color: #b7b7b7;
-  float: left;
-  height: 450px;
-  width: 500px;
-}
-#projects p {
-   height: 450px;
-   width: 500px;
-
-}
-#projects .portfolio {
-   display: flex;
-   flex-flow: row wrap;
-   justify-content: center;
-   align-items: center;
- }
-.portfolio {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin-left: 50px;
-}
-.half-width .para1, .para3 {
-   margin-left: 30px;
-}
-.para1 span {
-   font-size: 16px;
-}
-#projects .portfolio .half-width {
-   margin-bottom: 40px;
-}
-
-.para2 {
-   text-align: left;
-}
-#projects .align {
-  text-align: right;
-}
-.para4 {
-   text-align: left;
-}
-.para4 span {
-   font-size: 16px;
-   
-}
-.para1, .para2, .para3 {
-   margin-top: 10%;
-}*/
 
 /*===== SERVICES PAGE=====*/
 #services .container {
@@ -218,61 +182,41 @@ h6 {
    height: 335px;
 }
 
-/*===== ABOUT =====*/
-#about .full-width {
-   text-align: center;
-   height: 100px;
-   margin-left: 100px;
-   padding-top: 10px;
-}
-#about {
-   background-image: url('../img/about-me.png');
-   background-size: cover;
-   background-position: right;
-   box-sizing: content-box;
-   clear: both;
-   height: 875px;
-   
-}
-#about h3 {
-   padding-top: 50px;
-   margin-bottom: 140px;
-}
-#about p {
-   color: #1f202b;
-   font-size: 28px;
-   float: left;
-   height: 100px;
-   text-align: left;
-   margin: 0 10px 10px 300px;
-   padding: 10px;
-   width: 630px;
-}
-#about img {
-   float: right;
-   border: 10px outset silver;
-   height: 225px;
-   margin: 0 120px 0 0;
-   padding: 10px;
-   width: 225px;
-}
 
 /*===== FOOTER/CONTACT =====*/
-
+.contact-info {
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+}
 #contact h3 {
-   padding-top: 50px;
-   margin-bottom: 100px;
+   padding: 50px 0;
 }
 .connect {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   gap: 40px;
-
+   gap: 20px;
+   margin-top: 40px;
 }
 .connect .connecting {
    text-align: center;
-   background: var(--pink);
    padding: 10px;
+}
+.connecting .icons, ul {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-items: center;
+}
+.connecting .icons, a {
+   padding-left: 10px;
+}
+.connecting .icons, p {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-items: center;
 }
 /*#contact ul img {
    padding: 30px 0 0 50px ;
@@ -295,5 +239,5 @@ h6 {
 /*===== DESKTOP STYLES =====*/
 @media screen and (min-width: 1200px){
    
-}
+} 
 
